@@ -430,7 +430,7 @@ h3 {
   height: 200px;
   width: 200px;
   border-radius: 50%;
-  background-image: url(../assets/img/Poter.jpg);
+  background-image: url(../img/Poter.jpg);
   background-size: cover;
   -webkit-box-ordinal-group: 4;
   -webkit-order: 3;
