@@ -1,9 +1,5 @@
 footer
-  background-image: url(../img/2bg.jpg)
-  background-size: cover
-  background-position: center
-  
-  
+  @extend %bg-img
   .lockup
     padding: 50px 30px
   .lockup
@@ -12,14 +8,15 @@ footer
     .content-wrap
       float: left
       a
-        @extend .small-bold
+        @extend %small-bold
         color: white
         word-spacing: 0.1em
         display: inline-block
         margin-right: 30px
       
-      nav :hover
-        color: rgba(0,0,0,1)
+        &:hover
+          color: rgba(0,0,0,0.7)
+        
         
 
       

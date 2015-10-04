@@ -92,3 +92,13 @@ body
   color: $text-color
   -webkit-font-smoothing: antialiased
   -webkit-text-size-adjust: 100%
+  
+h3
+  @extend .small-bold
+  color: $accent-color
+  text-align: center
+  padding: 100px 0 30px
+  
+@media screen and (max-width: 480px)
+  h3
+    padding: 50px 0 50px  

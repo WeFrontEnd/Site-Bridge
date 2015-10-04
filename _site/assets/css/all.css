@@ -292,17 +292,33 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
-.small-bold, header nav a, .kicker, footer .lockup .content-wrap a, h3 {
+h3 {
+  color: #e1c184;
+  text-align: center;
+  padding: 100px 0 30px;
+}
+
+@media screen and (max-width: 480px) {
+  h3 {
+    padding: 50px 0 50px;
+  }
+}
+
+header nav a, .kicker, footer .lockup .content-wrap a {
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
 }
 
-header {
-  height: 450px;
+header, footer {
   background-image: url(../img/2bg.jpg);
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+}
+
+header {
+  height: 450px;
 }
 
 header .logo {
@@ -354,12 +370,6 @@ h1 span {
   line-height: 1;
 }
 
-footer {
-  background-image: url(../img/2bg.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
 footer .lockup {
   padding: 50px 30px;
 }
@@ -379,8 +389,8 @@ footer .lockup .content-wrap a {
   margin-right: 30px;
 }
 
-footer .lockup .content-wrap nav :hover {
-  color: black;
+footer .lockup .content-wrap a:hover {
+  color: rgba(0, 0, 0, 0.7);
 }
 
 footer .copyright {
@@ -390,12 +400,6 @@ footer .copyright {
   color: #EFEFEF;
   clear: both;
   padding-top: 15px;
-}
-
-h3 {
-  color: #e1c184;
-  text-align: center;
-  padding: 100px 0 30px;
 }
 
 .face-lockup {
@@ -416,21 +420,20 @@ h3 {
   -o-align-items: center;
   align-items: center;
   -ms-flex-align: center;
-  -webkit-box-pack: center;
-  box-pack: center;
-  -webkit-justify-content: space-around;
-  -moz-justify-content: space-around;
-  -ms-justify-content: space-around;
-  -o-justify-content: space-around;
-  justify-content: space-around;
-  -ms-flex-pack: center;
+  -webkit-box-pack: justify;
+  box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: justify;
 }
 
 .face-lockup .face-img {
   height: 200px;
   width: 200px;
   border-radius: 50%;
-  background-image: url(../img/Poter.jpg);
   background-size: cover;
   -webkit-box-ordinal-group: 4;
   -webkit-order: 3;
