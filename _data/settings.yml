@@ -1,0 +1,12 @@
+     
+ # Work section
+
+projects:
+- {name: The activities, folder: 'proj-1'}
+- {name: The HAHA, folder: 'proj-2'}
+- {name: The activities, folder: 'proj-1'}
+- {name: The activities, folder: 'proj-2'}
+- {name: The activities, folder: 'proj-1'}
+- {name: The YAns, folder: 'proj-2'}
+- {name: The activities, folder: 'proj-1'}
+- {name: The God, folder: 'proj-2'}
