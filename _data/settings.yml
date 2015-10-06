@@ -1,4 +1,42 @@
-     
+
+#-------------------------------
+# General Site Settings
+# Site settings
+
+title: Church Bridge
+description: Jesus // Love // Hope
+email: Zinchenko.yan@gmail.com
+
+
+# Menu loop
+# NOTE: The Logo and Background image are defined in the all.sass document.
+
+menu:
+- {name: About Me, url: '#about-me'}
+- {name: Work, url: '#work'}
+- {name: Clients, url: '#clients'}
+- {name: Contact, url: '#contact'}
+
+#-------------------------------
+
+# About Section
+# Site default images and content
+
+
+blurb: <p><strong>Derell Poter</strong> Consectetur adipisicing        Voluptate eum nesciunt in maiores nisi eius totam sequi harum           reprehenderit expedita <a href="">@mailDerell</a> a doloremque dignissimos accusantium architecto eos velit, aut, id. Odit animi, voluptatibus  esse perferendis <a href="">Facebook</a> labore architecto nemo tenetur perspiciatis libero, provider.
+      </p>
+      
+#   [Facebook](http://geekbrains.ru/records/932){:target="_blank"}     
+      
+skills:
+- {name: Communication, value: '9'}
+- {name: Organization, value: '8'}
+- {name: Learning, value: '10'}
+- {name: Teaching, value: '9'}
+- {name: Planning, value: '8'}
+- {name: Sport, value: '10'}
+
+#-------------------------------
  # Work section
 
 projects:
