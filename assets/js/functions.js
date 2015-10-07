@@ -8,7 +8,7 @@ $( document ).ready(function() {
 
 $(function() {
   smoothScroll(1000);
-  workBelt();
+//  workBelt();
 });
 // smoothScroll function is applied from the document ready function
 function smoothScroll (duration) {
@@ -26,21 +26,21 @@ function smoothScroll (duration) {
 }
 
 
-function workBelt() {
-
-  $('.thumb-unit').click(function() {
-    $('.work-belt').css('left','-100%');
-    $('.work-container').show();
-  });
-  
-  $('.work-return').click(function(){
-    
-  $('.work-belt').css('left','0%');
-  $('.work-container').hide(800);
-    
-    
-  });
-
-
-
-}
+//function workBelt() {
+//
+//  $('.thumb-unit').click(function() {
+//    $('.work-belt').css('left','-100%');
+//    $('.work-container').show();
+//  });
+//  
+//  $('.work-return').click(function(){
+//    
+//  $('.work-belt').css('left','0%');
+//  $('.work-container').hide(800);
+//    
+//    
+//  });
+//
+//
+//
+//}
