@@ -1,3 +1,19 @@
+.section-work
+  overflow-x: hidden
+  
+.work-belt
+  width: 200%
+  position: relative
+  left: 0%
+  +transition(all 800ms)
+
+.thumb-wrap, .work-wrap
+  width: 50%
+  float: left
+
+
+
+
 .alt-section
   background: $bgcolor
   
@@ -59,18 +75,54 @@
     &:hover
       z-index: 2
     
-    
       .thumb-overlay
          @extend %animation
          opacity: 1
         
       
            
-         
+.work-container
+  max-width: 600px
+  margin: 0px auto
+  
+  position: relative
+  display: none
+  
+  h4
+    color: $accent-color
+    font-weight: 300
+    text-transform: uppercase
+    font-size: 24px
+    line-height: 1.2
+    margin: 0 0 20px
+  
+  img
+    max-width: 100%
+    margin-bottom: 20px
+    
+  .work-return
+    +size(40px)
+    cursor: pointer
+    fill: rgba(0,0,0,0.4)
+    opacity: 0.5
+    +position(absolute, -5px null null -60px )
+
+    
+    &:hover
+       opacity: 1
       
     
+@media (max-width: 740px)
+  .work-container
     
+    .work-return
+      left: 0px
+      
     
+    h4
+      margin-left:  60px
+     
+       
    
     
   
