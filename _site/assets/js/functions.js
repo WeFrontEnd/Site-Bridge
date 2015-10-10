@@ -3,6 +3,7 @@
 $(function() {
   smoothScroll(1000);
   workBelt();
+  workLoad();
 });
 // smoothScroll function is applied from the document ready function
 function smoothScroll (duration) {
@@ -35,6 +36,23 @@ function workBelt() {
     
   });
 
-
-
 }
+
+
+//Work load spinner and title chench and photo
+function workLoad() {
+
+   $.ajaxSetup({ cache:true });
+  
+   $('.thumb-unit').click(function() {
+    
+     var $this = $(this),
+       newTitle = $this.find('strong').text(),  
+       newFolder = $this.data('folder'),
+       spinner = '<div class="loader">Loading...</div>',
+       newHTML = '/work/'+ newFolder +'.html';
+     $('.project-load').html(spinner).load(newHTML);
+     $('.project-title').text(newTitle);
+  });
+
+ }
