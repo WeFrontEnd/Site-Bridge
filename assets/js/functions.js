@@ -42,7 +42,7 @@ function workBelt() {
 //Work load spinner and title chench and photo
 function workLoad() {
 
-   $.ajaxSetup({ cache:true });
+   $.ajaxSetup({ cache: true });
   
    $('.thumb-unit').click(function() {
     
@@ -50,7 +50,7 @@ function workLoad() {
        newTitle = $this.find('strong').text(),  
        newFolder = $this.data('folder'),
        spinner = '<div class="loader">Loading...</div>',
-       newHTML = 'work/'+ newFolder +'.html';
+       newHTML = '/work/'+ newFolder +'.html';
      $('.project-load').html(spinner).load(newHTML);
      $('.project-title').text(newTitle);
   });
