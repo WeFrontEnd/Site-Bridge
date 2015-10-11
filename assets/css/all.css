@@ -552,6 +552,8 @@ header, footer {
 
 header {
   height: 450px;
+  background-position: 50% 50%;
+  padding-bottom: 50px;
 }
 
 header .logo {
@@ -733,6 +735,9 @@ footer .copyright {
     background-position: center center;
     background-repeat: no-repeat;
     margin: 0 auto 30px;
+  }
+  .face-lockup .face-img [class^="icon-"] {
+    margin: 10px 9%;
   }
 }
 

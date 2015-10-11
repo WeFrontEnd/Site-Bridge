@@ -25,7 +25,15 @@ menu:
 
 blurb: <p><strong>Derell Poter</strong> Consectetur adipisicing        Voluptate eum nesciunt in maiores nisi eius totam sequi harum           reprehenderit expedita <a href="">@mailDerell</a> a doloremque dignissimos accusantium architecto eos velit, aut, id. Odit animi, voluptatibus  esse perferendis <a href="">Facebook</a> labore architecto nemo tenetur perspiciatis libero, provider.
       </p>
-      
+   
+   
+   
+#   blurb: >
+#  **Travis specializes in making things** for human people.
+#  Most of the things he makes are [digital interfaces](http:){:target="_blank"},
+#  but he also puts effort into crafting [next-level beats](http://){:target="_blank"}
+#  and [YouTube videos](http:){:target="_blank"} about making codes happen.
+  
 #   [Facebook](http://geekbrains.ru/records/932){:target="_blank"}     
       
 skills:
