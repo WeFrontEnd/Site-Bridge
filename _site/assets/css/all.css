@@ -960,6 +960,10 @@ footer .copyright {
   }
 }
 
+.section-team {
+  position: relative;
+}
+
 .team-belt {
   width: 100%;
   position: relative;
@@ -975,4 +979,119 @@ footer .copyright {
   display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
+}
+
+.team-belt .team-unit .team-face {
+  min-width: 300px;
+  text-align: center;
+}
+
+.team-belt .team-unit .team-face img {
+  max-width: 120px;
+  border-radius: 50%;
+}
+
+.team-belt .team-unit .team-face .team-name {
+  display: block;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.team-belt .team-unit .team-face .team-title {
+  font-style: normal;
+  font-size: 12px;
+  color: #999;
+}
+
+.team-belt .team-unit .team-content {
+  font-size: 18px;
+  line-height: 36px;
+  font-weight: 300;
+  margin-top: -10px;
+  position: relative;
+}
+
+.teams-logos {
+  position: relative;
+  max-width: 750px;
+  margin: 0px auto 100px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: space-around;
+  box-align: space-around;
+  -webkit-align-items: space-around;
+  -moz-align-items: space-around;
+  -ms-align-items: space-around;
+  -o-align-items: space-around;
+  align-items: space-around;
+  -ms-flex-align: space-around;
+  -webkit-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+}
+
+.teams-logos .team-logo {
+  height: 80px;
+  min-width: 200px;
+  background-image: url(/assets/img/team/logo1.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  margin: 0 20px;
+}
+
+.teams-logos .team-logo.active-client {
+  box-shadow: 0px 4px 0px #e1c184;
+}
+
+.team-quote-mark {
+  position: absolute;
+  top: -18px;
+  left: -15px;
+  height: 60px;
+  width: 60px;
+  z-index: -1;
+  opacity: 0.3;
+}
+
+.team-quote-mark path {
+  fill: #e1c184;
+}
+
+.team-controls {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.team-controls > div {
+  height: 40px;
+  width: 40px;
+  margin-top: -20px;
+}
+
+.team-controls .team-control-next {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+}
+
+.team-controls .team-control-prev {
+  position: absolute;
+  top: 50%;
+  left: 10px;
 }
