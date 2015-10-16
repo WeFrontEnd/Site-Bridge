@@ -971,7 +971,10 @@ footer .copyright {
 
 .team-belt .team-unit {
   max-width: 700px;
-  margin: 0 auto 50px;
+  margin: 0 0 50px -375px;
+  position: absolute;
+  top: 0px;
+  left: 50%;
   display: -webkit-box;
   display: -moz-box;
   display: box;
@@ -1015,7 +1018,7 @@ footer .copyright {
 .teams-logos {
   position: relative;
   max-width: 750px;
-  margin: 0px auto 100px;
+  margin: 350px auto 100px;
   display: -webkit-box;
   display: -moz-box;
   display: box;
@@ -1044,7 +1047,7 @@ footer .copyright {
 .teams-logos .team-logo {
   height: 80px;
   min-width: 200px;
-  background-image: url(/assets/img/team/logo1.png);
+  background-image: url(../img/team/logo1.png);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -1076,6 +1079,7 @@ footer .copyright {
   right: 0px;
   bottom: 0px;
   left: 0px;
+  cursor: pointer;
 }
 
 .team-controls > div {

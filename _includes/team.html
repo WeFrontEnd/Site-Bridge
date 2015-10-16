@@ -10,21 +10,21 @@
  
   <div class="team-belt">
     
-    <div class="team-unit">
-      
+    {% for team in site.data.settings.teams %}
+    <div class="team-unit"> 
       <div class="team-face">
-        <img src="assets/img/team/face-adam.jpg" alt="Team-face" />
-        <strong class="team-name">Adam Nikkell </strong>
-        <em class="team-title">Boss Rays of Love</em>
+        <img src="assets/img/team/{{ team.avatar }}" alt="Team-face" />
+        <strong class="team-name">{{ team.name }} </strong>
+        <em class="team-title">{{ team.title }}</em>
       </div>
       
     <div class="team-content">    
-      <div class="team-quote-mark">{% include icons/icon-quote-mark.html %}</div>  
-        <p> <strong>Lorem ipsum dolor sit amet,</strong> consectetur adipisicing elit. Doloribus quasi sapiente quas incidunt distinctio officia? Consectetur numquam animi labore saepe non ratione, consequatur repudiandae assumenda, accusantium natus autem dolores iste, fuga esse consequuntur! </p>
+      <div class="team-quote-mark">{%  include icons/icon-quote-mark.html %}</div>  
+      {{  team.quote }}
       </div>
       
     </div>
-    
+    {% endfor %}
   </div>
   
   <div class="teams-logos">

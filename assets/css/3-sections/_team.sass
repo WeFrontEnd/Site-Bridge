@@ -8,8 +8,10 @@
   
   .team-unit
     max-width: 700px
-    margin: 0 auto 50px
+    margin: 0 0 50px -375px
+    +position(absolute, 0px null null 50%)
     +display(flex)
+    
       
     .team-face
       min-width: 300px
@@ -43,7 +45,7 @@
 .teams-logos
   position: relative
   max-width: 750px
-  margin: 0px auto 100px
+  margin: 350px auto 100px
   +display(flex)
   +align-items(space-around)
   +justify-content(center)  
@@ -52,7 +54,7 @@
   .team-logo
     height: 80px
     min-width: 200px
-    background-image: url(/assets/img/team/logo1.png)
+    background-image: url(../img/team/logo1.png)
     background-size: contain
     background-position: center
     background-repeat: no-repeat
@@ -73,6 +75,7 @@
     
 .team-controls
   +position(absolute, 0px 0px 0px 0px)
+  cursor: pointer
   
   
   > div

@@ -47,6 +47,7 @@ skills:
 #-------------------------------
  # Work section
 
+
 projects:
 - {name: The activities, folder: 'proj-1'}
 - {name: The HAHA, folder: 'proj-2'}
@@ -56,3 +57,13 @@ projects:
 - {name: The YAns, folder: 'proj-6'}
 - {name: The activities, folder: 'proj-7'}
 - {name: The God, folder: 'proj-8'}
+
+
+#-------------------------------
+ # Team section
+
+teams:
+- {avatar: 'face-adam.jpg', name: 'Adam Nikkell', title: 'Boss Rays of Love', quote: '<p> <strong>Lorem ipsum dolor sit amet,</strong> consectetur adipisicing elit. Doloribus quasi sapiente quas incidunt distinctio officia? Consectetur numquam animi labore saepe non ratione, consequatur repudiandae assumenda, accusantium natus autem dolores iste, fuga esse consequuntur! </p>'}
+- {avatar: 'face-vika.jpg', name: 'Adam Nikkell', title: 'Boss Rays of Love', quote: '<p> <strong>Lorem ipsum dolor sit amet,</strong> consectetur adipisicing elit. Doloribus quasi sapiente quas incidunt distinctio officia? Consectetur numquam animi labore saepe non ratione, consequatur repudiandae assumenda, accusantium natus autem dolores iste, fuga esse consequuntur! </p>'}
+- {avatar: 'face-adam.jpg', name: 'Adam Nikkell', title: 'Boss Rays of Love', quote: '<p> <strong>Lorem ipsum dolor sit amet,</strong> consectetur adipisicing elit. Doloribus quasi sapiente quas incidunt distinctio officia? Consectetur numquam animi labore saepe non ratione, consequatur repudiandae assumenda, accusantium natus autem dolores iste, fuga esse consequuntur! </p>'}
+- {avatar: 'face-vika.jpg', name: 'Adam Nikkell', title: 'Boss Rays of Love', quote: '<p> <strong>Lorem ipsum dolor sit amet,</strong> consectetur adipisicing elit. Doloribus quasi sapiente quas incidunt distinctio officia? Consectetur numquam animi labore saepe non ratione, consequatur repudiandae assumenda, accusantium natus autem dolores iste, fuga esse consequuntur! </p>'}
