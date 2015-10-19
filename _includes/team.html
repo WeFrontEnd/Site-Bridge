@@ -2,10 +2,7 @@
   
   <h3 id="team"> Our Team</h3>
   
- <div class="team-controls">
-   <div class="team-control-next">{% include icons/icon-next.html %}</div>
-   <div class="team-control-prev">{% include icons/icon-prev.html %}</div>
- </div> 
+
  
  
   <div class="team-belt">
@@ -27,15 +24,16 @@
     {% endfor %}
   </div>
   
+   <div class="team-controls">
+   <div class="team-control-next">{% include icons/icon-next.html %}</div>
+   <div class="team-control-prev">{% include icons/icon-prev.html %}</div>
+ </div> 
+  
+  
+  
   <div class="teams-logos">
-    
-    <div class="team-logo active-client"></div>
-    
-    <div class="team-logo"></div>
-    
-    <div class="team-logo"></div>
-    
-    <div class="team-logo"></div>
-    
+     {% for team in site.data.settings.teams %}
+    <div class="team-logo" style="  background-image: url(assets/img/team/{{ team.logo }});"></div>  
+    {% endfor  %}
   </div>
 </section>

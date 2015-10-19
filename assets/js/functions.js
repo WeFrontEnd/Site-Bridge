@@ -4,6 +4,9 @@ $(function() {
   smoothScroll(1000);
   workBelt();
   workLoad();
+  teamStuff();
+  
+  
 });
 // smoothScroll function is applied from the document ready function
 function smoothScroll (duration) {
@@ -57,3 +60,52 @@ function workLoad() {
   });
 
  }
+
+function teamStuff() {
+  
+  $('.team-unit').first().addClass('active-client');
+  $('.team-logo').first().addClass('active-client');
+  
+  $('.team-logo').click(function() {
+    var $this = $(this),
+        $siblings = $this.parent().children(),
+        position = $siblings.index($this);
+    
+    $('.team-unit').removeClass('active-client').eq(position).addClass('active-client');
+    $siblings.removeClass('active-client');
+    $this.addClass('active-client');
+  });
+  
+ $('.team-control-next, .team-control-prev').click(function() {
+  
+    var $this = $(this),
+        curActiveClient = $('.team-belt').find('.active-client'),
+        position = $('.team-belt').children().index(curActiveClient),
+        clientNum = $('.team-unit').length;
+        
+      if($this.hasClass('team-control-next')) {
+        
+        if(position < clientNum -1){
+          $('.active-client').removeClass('active-client').next().addClass('active-client');
+        } else {
+          $('.team-unit').removeClass('active-client').first().addClass('active-client');
+          $('.team-logo').removeClass('active-client').first().addClass('active-client');
+          $('.team-button').removeClass('active-client').first().addClass('active-client');
+        }
+        
+      } else {
+        
+        if (position === 0) {
+          $('.team-unit').removeClass('active-client').last().addClass('active-client');
+          $('.team-logo').removeClass('active-client').last().addClass('active-client');
+          $('.team-button').removeClass('active-client').last().addClass('active-client');
+        } else {
+          $('.active-client').removeClass('active-client').prev().addClass('active-client');  
+        }
+
+      }
+        
+  
+  });
+  
+}
