@@ -1,9 +1,11 @@
 <section class="section-team">
   
   <h3 id="team"> Our Team</h3>
-  
-
- 
+  <div class="team-mobile-nav">
+{% for team in site.data.settings.teams %}
+ <span> </span>
+  {% endfor %}
+ </div>
  
   <div class="team-belt">
     
@@ -33,7 +35,7 @@
   
   <div class="teams-logos">
      {% for team in site.data.settings.teams %}
-    <div class="team-logo" style="  background-image: url(assets/img/team/{{ team.logo }});"></div>  
+    <img class="team-logo" src="assets/img/team/{{ team.logo }}" alt="logo"> 
     {% endfor  %}
   </div>
 </section>

@@ -8,8 +8,8 @@
   
   .team-unit
     max-width: 700px
-    margin: 0 0 50px -375px
-    +position(absolute, 0px null null 50%)
+    margin:  50px auto
+    position: relative
     display: none
     
     
@@ -51,23 +51,22 @@
 .teams-logos
   position: relative
   max-width: 750px
-  margin: 350px auto 100px
+  margin: 50px auto 100px
   +display(flex)
-  +align-items(space-around)
-  +justify-content(center)  
+  +align-items(flex-end)
+  +justify-content(space-around)  
     
     
   .team-logo
-    height: 80px
-    min-width: 200px
-    background-size: contain
-    background-position: center bottom
-    background-repeat: no-repeat
     cursor: pointer
     margin: 0 20px
+    padding-bottom: 10px
+    border-bottom: 4px solid transparent
+    opacity: 0.5
    
     &.active-client
-       box-shadow: 0px 4px 0px $accent-color
+       border-bottom:  4px solid $accent-color
+       opacity: 1
 //      box-shadow: 0px 4px 0px $documentBackgroundColor, 0px 4px 0px $accent-color
 //    
 .team-quote-mark
@@ -79,6 +78,8 @@
   path
     fill: $accent-color
     
+    
+  // Controls  
 .team-controls
   +position(absolute, 0px 0px 0px 0px)
   cursor: pointer
@@ -94,12 +95,64 @@
   .team-control-prev
     +position(absolute, 50% null null 10px)
     
-   
+
     
-      
-      
+// clients-mobile-nav
+.team-mobile-nav
+  text-align: center
+  position: relative
+  z-index: 3
+  display: none
   
-        
-          
-      
+  span
+    display: inline-block
+    +size(16px)
+    border-radius: 50%
+    border: solid 2px $bgcolor
+    margin: 0px 10px
+    cursor: pointer
+    
+    &.active-client
+      border-color: $accent-color
+    
+    
+    
+
+@media (max-width: 850px)
+  .teams-logos
+    +flex-wrap(wrap)
   
+  .team-belt 
+    overflow-x: hidden
+    
+    .team-unit.active-client
+      display: block
+      position: relative
+      margin-left: auto
+      left: auto
+    
+      .team-face
+        margin-bottom: 30px
+      
+      .team-content
+        padding: 0px 30px
+        max-width: 400px
+        margin: 0px auto
+      
+      .team-quote-mark
+        left: 6px
+  
+  .teams-logos
+    display: none
+
+  .team-mobile-nav
+    display: block
+    
+    
+@media (max-width: 600px)
+  .team-controls
+     display: none
+    
+    
+    
+    

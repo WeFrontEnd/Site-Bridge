@@ -65,8 +65,10 @@ function teamStuff() {
   
   $('.team-unit').first().addClass('active-client');
   $('.team-logo').first().addClass('active-client');
+  $('.team-mobile-nav span').first().addClass('active-client');
   
-  $('.team-logo').click(function() {
+  
+  $('.team-logo, .team-mobile-nav span').click(function() {
     var $this = $(this),
         $siblings = $this.parent().children(),
         position = $siblings.index($this);

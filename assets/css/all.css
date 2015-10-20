@@ -1274,10 +1274,8 @@ footer .copyright {
 
 .team-belt .team-unit {
   max-width: 700px;
-  margin: 0 0 50px -375px;
-  position: absolute;
-  top: 0px;
-  left: 50%;
+  margin: 50px auto;
+  position: relative;
   display: none;
 }
 
@@ -1325,7 +1323,7 @@ footer .copyright {
 .teams-logos {
   position: relative;
   max-width: 750px;
-  margin: 350px auto 100px;
+  margin: 50px auto 100px;
   display: -webkit-box;
   display: -moz-box;
   display: box;
@@ -1333,36 +1331,35 @@ footer .copyright {
   display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: space-around;
-  box-align: space-around;
-  -webkit-align-items: space-around;
-  -moz-align-items: space-around;
-  -ms-align-items: space-around;
-  -o-align-items: space-around;
-  align-items: space-around;
-  -ms-flex-align: space-around;
+  -webkit-box-align: end;
+  box-align: end;
+  -webkit-align-items: flex-end;
+  -moz-align-items: flex-end;
+  -ms-align-items: flex-end;
+  -o-align-items: flex-end;
+  align-items: flex-end;
+  -ms-flex-align: end;
   -webkit-box-pack: center;
   box-pack: center;
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
-  -ms-justify-content: center;
-  -o-justify-content: center;
-  justify-content: center;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  -ms-justify-content: space-around;
+  -o-justify-content: space-around;
+  justify-content: space-around;
   -ms-flex-pack: center;
 }
 
 .teams-logos .team-logo {
-  height: 80px;
-  min-width: 200px;
-  background-size: contain;
-  background-position: center bottom;
-  background-repeat: no-repeat;
   cursor: pointer;
   margin: 0 20px;
+  padding-bottom: 10px;
+  border-bottom: 4px solid transparent;
+  opacity: 0.5;
 }
 
 .teams-logos .team-logo.active-client {
-  box-shadow: 0px 4px 0px #e1c184;
+  border-bottom: 4px solid #e1c184;
+  opacity: 1;
 }
 
 .team-quote-mark {
@@ -1404,4 +1401,68 @@ footer .copyright {
   position: absolute;
   top: 50%;
   left: 10px;
+}
+
+.team-mobile-nav {
+  text-align: center;
+  position: relative;
+  z-index: 3;
+  display: none;
+}
+
+.team-mobile-nav span {
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  border: solid 2px #e5eaee;
+  margin: 0px 10px;
+  cursor: pointer;
+}
+
+.team-mobile-nav span.active-client {
+  border-color: #e1c184;
+}
+
+@media (max-width: 850px) {
+  .teams-logos {
+    -webkit-box-lines: multiple;
+    -moz-box-lines: multiple;
+    box-lines: multiple;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .team-belt {
+    overflow-x: hidden;
+  }
+  .team-belt .team-unit.active-client {
+    display: block;
+    position: relative;
+    margin-left: auto;
+    left: auto;
+  }
+  .team-belt .team-unit.active-client .team-face {
+    margin-bottom: 30px;
+  }
+  .team-belt .team-unit.active-client .team-content {
+    padding: 0px 30px;
+    max-width: 400px;
+    margin: 0px auto;
+  }
+  .team-belt .team-unit.active-client .team-quote-mark {
+    left: 6px;
+  }
+  .teams-logos {
+    display: none;
+  }
+  .team-mobile-nav {
+    display: block;
+  }
+}
+
+@media (max-width: 600px) {
+  .team-controls {
+    display: none;
+  }
 }
